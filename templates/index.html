@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>WorkShop Digital House</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+<body>
+  <div class="login">
+    <h1>Predict Oscar</h1>
+
+  <!-- Main Input For Receiving Query to our ML -->
+      <form action="{{ url_for('predict')}}"method="post">
+
+        <input type="text" name="avg_vote" placeholder="avg_vote" required="required" />
+        <input type="text" name="votes" placeholder="votes" required="required" />
+        <input type="text" name="metascore" placeholder="metascore" required="required" />
+        <input type="text" name="review_from_users" placeholder="review_from_users" required="required" />
+        <input type="text" name="reviews_from_critics" placeholder="reviews_from_critics" required="required" />
+        <input type="text" name="weighted_average_vote" placeholder="weighted_average_vote" required="required" />
+        <input type="text" name="total_votes" placeholder="total_votes" required="required" />
+        <input type="text" name="mean_votes" placeholder="mean_votes" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+      </form>
+
+      <br>
+      <br>
+      {{ prediction_text }}
+  </div>
+</body>
+</html>
