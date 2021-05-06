@@ -15,7 +15,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/datbugg/workshopdh?style=for-the-badge)
 
 <div align="center">
-  <img alt="Demo" src="https://www.digitalhouse.com/ar/logo-DH.png"  width="300" height="100" />
+  <img alt="DHLogo" src="https://www.digitalhouse.com/ar/logo-DH.png"  width="300" height="100" />
 </div>
 
 ## Final Work Data Science Course
